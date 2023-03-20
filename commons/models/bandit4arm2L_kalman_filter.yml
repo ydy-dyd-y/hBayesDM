@@ -1,6 +1,6 @@
 task_name:
-  code: bandit4arm2
-  desc: 4-Armed Bandit Task (modified)
+  code: bandit4arm2L
+  desc: 4-Armed Bandit Task Loss(modified)
   cite:
 model_name:
   code: kalman_filter
@@ -30,13 +30,13 @@ parameters:
     info: [0, 0.9, 1]
   theta:
     desc: decay center
-    info: [0, 50, 100]
+    info: [-100, -50, 0]
   beta:
     desc: inverse softmax temperature
     info: [0, 0.1, 1]
   mu0:
     desc: anticipated initial mean of all 4 options
-    info: [0, 85, 100]
+    info: [-100, -85, 0]
   s0:
     desc: anticipated initial sd (uncertainty factor) of all 4 options
     info: [0, 6, 15]
